@@ -1,0 +1,34 @@
+.panel {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.panel-secondary {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+.panel-secondary .panel-body h4 {
+   font-weight: 600;
+}
+.ilContainerBlock, .il-panel-listing-std-container, .calstd {
+   background-color: transparent;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.ilContainerBlock .ilContainerBlockHeader {
+   background-color: @il-secondary-container-bg;
+   color: @panel-heading-color;
+}
+.ilContainerBlock .ilContainerBlockHeader h3.ilHeader {
+   font-size: 18px;
+   border-bottom: none;
+   background-color: transparent;
+   font-weight: 500;
+   text-transform: none;
+}
+div.row.ilContainerBlockHeader.ilContainerBlockHeaderExpanded > .ilContainerBlockHeader {
+   padding-left: 2px;
+}
+.panel .panel-heading.ilHeader h2,
+.panel .panel-heading.ilBlockHeader h2,
+.panel .panel-heading.ilHeader h2.ilHeader,
+.panel .panel-heading.ilBlockHeader h2.ilHeader {
+    color: @panel-heading-color !important;
+}

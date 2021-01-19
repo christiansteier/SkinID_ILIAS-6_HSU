@@ -12,12 +12,12 @@
 		ILIAS 4 MainMenu Color: #c8e6ff;
 */
 
-@brand-primary:		#4c6586;
+@brand-primary:		#a50034;
 @brand-secondary:		#6ea03c;
 @brand-success:		#6ea03c;
 @brand-info:		#dcb496;
-@brand-warning:		#fa8228;
-@brand-danger:		#fa8228;
+@brand-warning:		#a50034;
+@brand-danger:		#a50034;
 
 /** if left unchanged, you have to copy all the background images to your skin/images folder.
 * To use the delos background images in your skin,
@@ -31,11 +31,11 @@
 */
 @web-font-path:		"fonts/";
 
-@mid-gray:		#434343;
+@mid-gray:		#404040;
 @il-primary-container-bg:		white;
 @il-secondary-container-bg:		#f9f9f9;
 
-@il-highlight-bg:		#dfe3e6;
+@il-highlight-bg:		#fae5e9;
 /* @il-highlight-bg: saturate(lighten(@brand-warning, 34%), 80%); */
 /* @il-highlight-bg: lighten(@brand-secondary, 44%); */
 /* @il-highlight-bg: lighten(#21c5d8, 40%); */
@@ -94,8 +94,8 @@
 @body-bg:		#f0f0f0;
 @text-color:		@gray-dark;
 @il-light-text-color:		lighten(@mid-gray, 30%);
-@link-color:		lighten(@brand-primary, 5%);
-@link-hover-color:		darken(@link-color, 15%);
+@link-color:		@mid-gray;
+@link-hover-color:		@brand-primary;
 
 @component-active-color:		white;
 @btn-primary-color:		white;
@@ -640,7 +640,7 @@
 @il-dropzone-bg:		white;
 @il-dropzone-bg-inactive:		#F4F4F4;
 //** Background color used when a dropzone is highlighted (not when hovered).
-@il-dropzone-highlight-bg:		#FFFFD6;
+@il-dropzone-highlight-bg:		#fae5e9;
 //** Background color used when a dropzone is hovered.
 @il-dropzone-hover-bg:		#FFF9BC;
 @il-dropzone-border-radius:		0px;
@@ -973,3 +973,40 @@
 //##
 //** item rows layout
 @characteristic-value-border-color:		#ddd;
+
+//== HSU specific variables
+//
+//##
+@hsu-button-primary-bg-color:		@mid-gray;
+@hsu-button-primary-color:		white;
+@hsu-button-primary-border-color:		@hsu-button-primary-bg-color;
+@hsu-button-primary-hover-bg-color:		#fff;
+@hsu-button-primary-hover-color:		@brand-primary;
+@hsu-button-default-bg-color:		#fff;
+@hsu-button-default-color:		@mid-gray;
+@hsu-button-default-hover-color:		@brand-primary;
+@hsu-button-default-border-color:		#e8e8e8;
+@hsu-button-info-bg-color:		#fff;
+@hsu-button-info-color:		@hsu-button-default-color;
+@hsu-button-info-border-color:		@hsu-button-info-bg-color;
+@hsu-button-disabled-bg-color:		#d2d2d2;
+@hsu-button-disabled-color:		#4b4b4b;
+@hsu-button-disabled-border-color:		@hsu-button-disabled-bg-color;
+@hsu-button-month-text-color:		@mid-gray;
+@hsu-button-test-submit-background:		@brand-primary;
+@hsu-button-test-submit-text:		rgb(255, 255, 255);
+@hsu-button-rss-ical-bg-color:		rgb(230, 87, 34);
+@hsu-button-special-color:		#ffffff;
+@hsu-button-special-bg-color:		@mid-gray;
+@hsu-button-special-border-color:		@mid-gray;
+@hsu-button-special-hover-color:		@brand-primary;
+@hsu-button-special-hover-bg-color:		#ffffff;
+@hsu-button-special-hover-border-color:		#ffffff;
+
+@hsu-button-info-table-color:		#1e1e1e;
+@hsu-button-info-table-bg-color:		transparent;
+@hsu-button-info-table-border-color:		@mid-gray;
+@hsu-button-info-table-hover-color:		@brand-primary;
+@hsu-button-info-table-hover-bg-color:		#ffffff;
+@hsu-button-info-table-hover-border-color:		transparent;
+@hsu-rss-button-background-color:		@brand-primary;

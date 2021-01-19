@@ -1,0 +1,210 @@
+.btn-default {
+  .button-variant(@hsu-button-default-color; @hsu-button-default-bg-color; @hsu-button-default-border-color);
+}
+.btn-default,.open > .dropdown-toggle.btn-default{
+  &:focus, &.focus, &:hover, &:active, &.active, &:active:focus,
+  .dropdown-toggle.btn-default &:focus, .dropdown-toggle.btn-default &:focus{
+    color: @hsu-button-default-hover-color;
+    background-color: white;
+    box-shadow: none;
+    outline: none;
+  }
+  &:active,&.active,&:active:focus{
+    color: darken(@hsu-button-default-hover-color,10%);
+  }
+}
+.open > .dropdown-toggle.btn-default{
+  border: none;
+  &:focus, &.focus, &:hover, &:active, &.active, &:active:focus,
+  .dropdown-toggle.btn-default &:focus, .dropdown-toggle.btn-default &:focus {
+    border: none ;
+    border-color: white;
+  }
+}
+div.btn-group-vertical button.btn-default{
+  background-color:@hsu-button-default-bg-color;
+  border:@hsu-button-default-bg-color;
+}
+div.btn-group-vertical button.btn-default:hover{
+  color:@hsu-button-default-hover-color;
+  background-color:@hsu-button-default-bg-color;
+}
+.open > .dropdown-toggle.btn-default,  div.btn-group-vertical .open > .dropdown-toggle.btn-default{
+  color: @hsu-button-default-hover-color;
+  background-color: transparent;
+  border-color: white;
+  border: none ;
+  box-shadow: none;
+  outline: none;
+  &:focus, &:focus, &.active,&:active,&:active:focus{
+    background-color: transparent;
+  }
+}
+.btn-default.dropdown-toggle.btn-default{
+  &:focus,&:focus{
+    background-color: transparent;
+  }
+}
+.btn-primary, .btn-primary.dropdown-toggle.btn-default.btn-split{
+  .button-variant(@hsu-button-primary-color; @hsu-button-primary-bg-color; @hsu-button-primary-border-color);
+}
+.btn-info {
+  .button-variant(@hsu-button-info-color; @hsu-button-info-bg-color; @hsu-button-info-border-color);
+}
+.hidden-xs > .btn-default:first-child{
+    .button-variant(@hsu-button-primary-color; @hsu-button-primary-bg-color; @hsu-button-primary-border-color);
+}
+.btn.disabled,.btn.btn-default.disabled,
+.btn[disabled],.btn.btn-default[disabled],
+fieldset[disabled] .btn,
+input.ilSubmitInactive, input.ilSubmitInactive:hover, input.ilSubmitInactive:active,
+a.ilSubmitInactive, a.ilSubmitInactive:hover , a.ilSubmitInactive:active {
+  color: @hsu-button-disabled-color;
+  background-color: @hsu-button-disabled-bg-color;
+  border-color: @hsu-button-disabled-border-color;
+
+  &:focus,
+  &.focus,  &:hover, &:active, &.active {
+    color: @hsu-button-disabled-color;
+    background-color: @hsu-button-disabled-bg-color;
+    border-color: @hsu-button-disabled-border-color;
+  }
+}
+.il-viewcontrol-section {
+  .btn-default {
+    background-color: transparent;
+    border-color: transparent;
+
+    &:focus, &.focus, &:hover, &:active, &.active, &:active:focus {
+      color: @hsu-button-default-hover-color;
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+.il-btn-month > button.btn.btn-default.dropdown-toggle:focus {
+  color: @hsu-button-month-text-color;
+  &:focus, &.focus,  &:hover,&:active,&.active,&:active:focus {
+    color: @hsu-button-default-hover-color;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+  }
+}
+.btn-group.il-btn-month.open span.il-current-month {
+  color: inherit;
+
+  &:focus, &.focus, &:hover, &:active, &.active, &:active:focus {
+    color: inherit;
+  }
+}
+input.btn.btn-default {
+  vertical-align: unset;
+}
+span.ilNewsRssIcon {
+  background-color: @hsu-button-rss-ical-bg-color;
+}
+button .caret{
+  background-color: transparent;
+  vertical-align: unset;
+  margin: unset;
+  border: none;
+  width: unset;
+  height: unset;
+  margin-left: auto;
+  margin-right: auto;
+  &:extend(.glyphicon);
+  &:extend(.glyphicon-triangle-bottom);
+  &:before{
+    font-family: il-icons;
+    content: "\e604";
+  }
+  &:hover{
+    font-weight:bold;
+  }
+}
+.dropdown button,
+.dropdown-toggle.btn-default{
+  background-color:  transparent;
+  border-color:  transparent;
+}
+.dropdown-toggle.btn-default.btn-split {
+  background-color: @brand-secondary;
+  border-color: @brand-secondary;
+}
+.dropdown-menu li > a{
+  color:@brand-primary;
+}
+ul.dropdown-menu > li > .btn:hover,
+ul.dropdown-menu > li > .btn:focus {
+  text-decoration: none;
+  /* color: #262626; */
+  /* background-color: #a5a5a5; */
+}
+ul.dropdown-menu > li > .btn,
+ul.dropdown-menu > li > a{
+  &:focus,&:active,&:hover{
+    color: @hsu-button-default-hover-color;
+    background-color: transparent;
+  }
+  &:active,&.active,&:active:focus{
+    color: darken(@hsu-button-default-hover-color,10%);
+  }
+}
+.panel .panel-heading.ilHeader .dropdown > button.dropdown-toggle,
+.panel .panel-heading.ilBlockHeader .dropdown > button.dropdown-toggle {
+  :hover{
+    color: @hsu-button-default-hover-color;
+  }
+}
+.il-modal-roundtrip .il-dropzone-base > .btn-default:enabled,
+.panel-secondary .panel-body div form .btn-default,
+td .btn-group-vertical > .btn:first-child:not(:last-child),
+.il_InfoScreenPropertyValue .btn-default {
+  color:@hsu-button-special-color;
+  background-color: @hsu-button-special-bg-color;
+  border-color: @hsu-button-special-border-color;
+}
+.il-modal-roundtrip .il-dropzone-base > .btn-default:hover:enabled,
+.panel-secondary .panel-body div form .btn-default:hover,
+td .btn-group-vertical > .btn:first-child:not(:last-child):hover,
+.il_InfoScreenPropertyValue .btn-default:hover {
+  color:@hsu-button-special-hover-color;
+  background-color: @hsu-button-special-hover-bg-color;
+  border-color: @hsu-button-special-hover-border-color;
+}
+.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:active,
+.open > .dropdown-toggle.btn-primary:focus {
+  background-color:@hsu-button-primary-hover-bg-color;
+  border-color: @hsu-button-default-border-color;
+  color:@hsu-button-primary-hover-color;
+}
+td .btn-group-vertical .btn-info,
+td .btn-group-vertical .dropdown .dropdown-toggle{
+  background-color: @hsu-button-info-table-bg-color;
+  border-color: @hsu-button-info-table-border-color;
+  color: @hsu-button-info-table-color;
+}
+td .btn-group-vertical .dropdown .dropdown-toggle:hover {
+  background-color: @hsu-button-info-table-hover-bg-color;
+  border-color: @hsu-button-info-table-hover-border-color;
+}
+td .btn-group-vertical .btn-info:hover{
+  color: @hsu-button-info-table-hover-color;
+  border-color:@hsu-button-info-table-hover-border-color;
+  background-color:@hsu-button-info-table-hover-bg-color;
+}
+.dropdown-toggle.btn-default.btn-split{
+  background-color: transparent;
+  border-color: transparent;
+}
+span.ilNewsRssIcon{
+  background-color: @hsu-rss-button-background-color;
+}
+.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:active,
+.open > .dropdown-toggle.btn-primary:focus {
+  color: @brand-primary;
+}
