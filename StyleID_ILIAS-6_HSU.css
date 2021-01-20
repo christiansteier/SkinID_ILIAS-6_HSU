@@ -20140,6 +20140,10 @@ div.ilTableFilterLabel {
   font-style: italic;
   background-color: none;
 }
+.ilContainerTileRows {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .il-card {
   max-width: 350px;
   margin-right: auto;
@@ -20147,6 +20151,9 @@ div.ilTableFilterLabel {
 }
 .il-card .caption dl dt {
   color: #404040;
+}
+.il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button {
+  color: #e0e0e0;
 }
 /*		Color scheme
 		Dark BLue: #0f2152;
