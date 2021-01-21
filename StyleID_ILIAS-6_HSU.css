@@ -20149,11 +20149,17 @@ div.ilTableFilterLabel {
 .il-card .btn {
   font-size: unset;
 }
+.il-card button .caret:hover {
+  font-weight: unset;
+}
 .il-card .caption dl dt {
   color: #404040;
 }
 .il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button {
   color: #e0e0e0;
+}
+.il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button span.caret {
+  color: white;
 }
 /*		Color scheme
 		Dark BLue: #0f2152;
