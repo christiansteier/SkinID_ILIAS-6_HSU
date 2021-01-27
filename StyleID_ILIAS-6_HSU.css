@@ -19303,6 +19303,10 @@ table.mceToolbar td {
 }
 .il-layout-page {
   background: white;
+  hyphens: unset;
+  -webkit-hyphens: unset;
+  -ms-hyphens: unset;
+  -moz-hyphens: unset;
 }
 #il_center_col {
   padding-left: 15px !important;
@@ -20160,6 +20164,10 @@ div.ilTableFilterLabel {
 }
 .il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button span.caret {
   color: white;
+}
+.il-workflow-header .il-workflow-title {
+  background-color: transparent;
+  color: #404040;
 }
 /*		Color scheme
 		Dark BLue: #0f2152;
